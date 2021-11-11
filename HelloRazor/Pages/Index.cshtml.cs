@@ -17,6 +17,7 @@ namespace HelloRazor.Pages
             _logger = logger;
         }
 
+
         public IActionResult OnGet()
         {
             Message = "Dette er lagt ind i OnGet metoden " + DateTime.Now; // det kunne hentes fra en anden klassen eller en database 
