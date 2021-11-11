@@ -1,0 +1,18 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Index page " + DateTime.Now.DayOfWeek ;
+    ViewData["Test"] = "Hej med jer";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome to hello razor the date is @DateTime.Now.ToShortDateString() it is @DateTime.Now.DayOfWeek</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <p><h1>@Model.Message</h1>
+        Lorem Ipsum er ganske enkelt fyldtekst fra print- og typografiindustrien.
+        Lorem Ipsum har været standard fyldtekst siden 1500-tallet,
+        hvor en ukendt trykker sammensatte en tilfældig spalte for at trykke en bog til sammenligning af
+        forskellige skrifttyper. Lorem Ipsum har ikke alene overlevet fem århundreder, men har også vundet
+        indpas i elektronisk typografi uden væsentlige ændringer. Sætningen blev gjordt kendt i 1960'erne med lanceringen af Letraset-ark, som indeholdt afsnit med Lorem Ipsum, og senere med layoutprogrammer som Aldus PageMaker, som også indeholdt en udgave af Lorem Ipsum.
+    </p>
+</div>
